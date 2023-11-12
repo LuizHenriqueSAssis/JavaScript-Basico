@@ -1,14 +1,33 @@
-const nav = document.querySelector('nav');
-const produtos = document.querySelector('.produtos a');
+const nome = 'O Senhor dos Anéis';
+const ano = 1954;
+const autor = 'J. R. R. Tolkien';
 
-console.log(nav);
-console.log(produtos);
+const nomeFilme = "O Senhor dos Anéis";
+const anoFilme = 2001;
+const diretorFilme = "Peter Jackson";
 
-console.log(produtos.href);
+const livro = {
+  nome: "O Senhor dos Anéis",
+  ano: 1954,
+  autor: "J. R. R. Tolkien",
+}
 
-console.dir(nav);
+const filme = {
+  nome: "O Senhor dos Anéis",
+  ano: 2001,
+ diretor: "Peter Jackson" ,
+};
 
-nav.style.backgroundColor = "black";
-nav.style.padding = "1rem";
+console.log(livro.nome === nome);
 
-nav.classList.add('ativo');
+const texto = document.querySelector('p');
+
+console.log(autor.toLocaleUpperCase());
+const decimal = 122.99;
+
+console.log(Number(decimal.toFixed()) + 3);
+console.log(3);
+
+const total = decimal.toFixed().length;
+
+console.log(total);
