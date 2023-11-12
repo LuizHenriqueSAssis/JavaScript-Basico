@@ -1,33 +1,12 @@
-const nome = 'O Senhor dos Anéis';
-const ano = 1954;
-const autor = 'J. R. R. Tolkien';
+const nome = "JavaScript"
 
-const nomeFilme = "O Senhor dos Anéis";
-const anoFilme = 2001;
-const diretorFilme = "Peter Jackson";
-
-const livro = {
-  nome: "O Senhor dos Anéis",
-  ano: 1954,
-  autor: "J. R. R. Tolkien",
+function logCurso() {
+  const nome = "HTML"
+  console.log(nome);
+  return nome;
 }
 
-const filme = {
-  nome: "O Senhor dos Anéis",
-  ano: 2001,
- diretor: "Peter Jackson" ,
-};
+const nomedaFuncao = logCurso();
 
-console.log(livro.nome === nome);
-
-const texto = document.querySelector('p');
-
-console.log(autor.toLocaleUpperCase());
-const decimal = 122.99;
-
-console.log(Number(decimal.toFixed()) + 3);
-console.log(3);
-
-const total = decimal.toFixed().length;
-
-console.log(total);
+console.log(nome);
+console.log(nomedaFuncao);
