@@ -1,9 +1,17 @@
-const ativar = document.querySelector('.ativar');
+const larguraTela = window.innerWidth;
 
-function ativarAoClick(event) {
-  console.log(event.timeStamp); 
+/*function coordenada(event){
+  const coordenadas = {
+    x: event.x,
+    y:event.y
+  }
+  console.log(coordenadas)
 }
 
-ativar.addEventListener('click', ativarAoClick)
+window.addEventListener('mousemove', coordenada);*/
 
-console.log(ativar)
+function scroll(){
+  console.log(window.scrollY);
+}
+
+window.addEventListener("scroll", scroll);
