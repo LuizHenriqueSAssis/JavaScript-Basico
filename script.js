@@ -1,10 +1,19 @@
-const circulo = document.querySelector('#circulo');
+const soma = document.querySelector('#soma');
+const valor = document.querySelector('#valor')
 
-function seguirMouse(event) {
-    circulo.style.top = event.y + 'px';
-    circulo.style.left = event.x + 'px';
+function somarAoClick(somar){
+  
+  if(valor.innerText < 10){  
+    const total = Number(valor.innerText) + 1;
+    valor.innerText = total
+   console.log(total)
+  }else{
+    valor.innerText = 'Error'
+    console.log('Error')
+  }
+
 }
-
-window.addEventListener('mousemove', seguirMouse);
-
-//classList
+if(soma){
+  soma.addEventListener('click', somarAoClick);
+}
+ 
