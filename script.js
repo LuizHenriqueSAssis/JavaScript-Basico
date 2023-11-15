@@ -1,19 +1,8 @@
-const soma = document.querySelector('#soma');
-const valor = document.querySelector('#valor')
+const lista = ["JavaScript", 20, true];
 
-function somarAoClick(somar){
-  
-  if(valor.innerText < 10){  
-    const total = Number(valor.innerText) + 1;
-    valor.innerText = total
-   console.log(total)
-  }else{
-    valor.innerText = 'Error'
-    console.log('Error')
-  }
+const body = document.querySelector("body");
 
+for (let index = 0; index < lista.length; index++){
+  console.log(lista[index]);
+  body.innerHTML += "<p>" + lista[index] +  "</p>";
 }
-if(soma){
-  soma.addEventListener('click', somarAoClick);
-}
- 
