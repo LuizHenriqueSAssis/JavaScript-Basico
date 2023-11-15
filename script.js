@@ -1,17 +1,10 @@
-const larguraTela = window.innerWidth;
+const circulo = document.querySelector('#circulo');
 
-/*function coordenada(event){
-  const coordenadas = {
-    x: event.x,
-    y:event.y
-  }
-  console.log(coordenadas)
+function seguirMouse(event) {
+    circulo.style.top = event.y + 'px';
+    circulo.style.left = event.x + 'px';
 }
 
-window.addEventListener('mousemove', coordenada);*/
+window.addEventListener('mousemove', seguirMouse);
 
-function scroll(){
-  console.log(window.scrollY);
-}
-
-window.addEventListener("scroll", scroll);
+//classList
