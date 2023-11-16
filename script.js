@@ -1,19 +1,16 @@
-const links = document.querySelectorAll('nav a');
+const links = document.querySelectorAll("nav a");
 
-function logHref(item) {
-  const href = item.href;
-  console.log(item);
+function ativarLink(link){
+  const href =link.href;
+  const url = document.location.href;
+
+  if(href === url){
+    link.style.backgroundColor = "black";
+    link.style.color = "white";
+  }
+
+  console.log(url);
+  console.log(href);
 }
 
-links.forEach(logHref);
-
-console.log(links);
-
-const lista = ["JasvaScript","HTML","CSS"];
-
-const ultimo = lista.pop();
-const primeiro = lista.shift();
-
-console.log(lista)
-console.log(ultimo);
-console.log(primeiro)
+links.forEach(ativarLink);
