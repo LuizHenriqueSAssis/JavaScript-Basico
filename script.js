@@ -1,16 +1,14 @@
-const links = document.querySelectorAll("nav a");
+const imagens = document.querySelectorAll("#galeria li img");
 
-function ativarLink(link){
-  const href =link.href;
-  const url = document.location.href;
-
-  if(href === url){
-    link.style.backgroundColor = "black";
-    link.style.color = "white";
-  }
-
-  console.log(url);
-  console.log(href);
+function galeriaTrocar(event){
+  const principal = document.querySelector("#imagem-principal");
+  const clicada = event.currentTarget;
+  principal.src = clicada.src;
+  principal.alt = clicada.alt;
 }
 
-links.forEach(ativarLink);
+function galeriaClique(imagem) {
+  imagem.addEventListener('click', galeriaTrocar);
+}
+
+imagens.forEach(galeriaClique);
